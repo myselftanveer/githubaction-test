@@ -3,11 +3,12 @@ name: Simple Command
 on: [push]
 
 jobs:
+  build:
     runs-on: ubuntu-latest
-steps:
-  -name: echo a string
-  run: echo "welcome"
-  -name: multiline
-  run: |
-      node -v
-      npm -v
+    steps:
+      -name: echo a string
+      run: echo "welcome"
+      -name: multiline
+      run: |
+        node -v
+        npm -v
