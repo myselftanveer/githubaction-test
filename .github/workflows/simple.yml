@@ -1,0 +1,13 @@
+name: Simple Command
+
+on: [push]
+
+jobs:
+    runs-on: ubuntu-latest
+steps:
+  -name: echo a string
+  run: echo "welcome"
+  -name: multiline
+  run: |
+      node -v
+      npm -v
