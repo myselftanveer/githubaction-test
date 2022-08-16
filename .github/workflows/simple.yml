@@ -3,7 +3,7 @@ name: Simple Command
 on: [push]
 
 jobs:
-  build:
+  run-shell-command:
     runs-on: ubuntu-latest
     steps:
       - name: echo a string
