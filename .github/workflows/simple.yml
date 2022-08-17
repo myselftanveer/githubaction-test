@@ -1,6 +1,10 @@
 name: Simple Command
 
-on: [push]
+on: 
+  schedule:
+      - cron: "30 * * * * "
+
+  pull_request:
 
 jobs:
   run-shell-command:
